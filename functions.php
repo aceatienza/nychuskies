@@ -472,3 +472,6 @@ function theme_styles()
     wp_enqueue_style('bootstrap-css');
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
+
+// Register Custom Navigation Walker
+require_once('twitter_bootstrap_nav_walker.php');

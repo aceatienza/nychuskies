@@ -44,23 +44,30 @@
 	<header id="masthead" class="site-header" role="banner">
 <!-- removed hgroup -->
 
-
-  <div class="navbar navbar-inverse navbar-fixed-top">
+<!-- navbar -->
+  <div class="navbar">
     <div class="navbar-inner">
+      <!-- TODO: change brand to logo -->
+      <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
       <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+        
         <div class="nav-collapse collapse">
-          <ul class="nav">
-
-              <?php wp_list_pages(array('title_li' => '', 'exclude' => 4)); ?>
-
-          </ul>
-        </div><!--/.nav-collapse -->
+          <?php 
+              wp_nav_menu( array(
+                  'menu'       => 'top_menu',
+                  'depth'      => 2,
+                  'container'  => false,
+                  'menu_class' => 'nav',
+                  'fallback_cb' => 'wp_page_menu',
+                  'walker' => new twitter_bootstrap_nav_walker()) // in case we add drop down menus
+              );
+          ?>
+        </div>
       </div>
     </div>
   </div>
