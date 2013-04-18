@@ -99,8 +99,9 @@ function twentytwelve_scripts_styles() {
 
 	/*
 	 * Adds JavaScript for handling the navigation menu hide-and-show behavior.
-	 */
+	 
 	wp_enqueue_script( 'twentytwelve-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true );
+	*/
 
 	/*
 	 * Loads our special font CSS file.
@@ -448,3 +449,26 @@ function twentytwelve_customize_preview_js() {
 	wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
+
+/*
+ * Load Bootstrap and add other js files here
+*/
+function theme_js()
+{
+	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '2.3.1' );
+	wp_enqueue_script( 'bootstrap-js' );
+}
+add_action( 'wp_enqueue_scripts', 'theme_js' );
+
+/**
+* Load CSS styles 
+*/
+function theme_styles()
+{
+    wp_register_style( 'bootstrap-responsive', get_template_directory_uri() . '/bootstrap/css/bootstrap-responsive.min.css', array(), '2.3.1', 'all' );
+    wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css', array(), '2.3.1', 'all' );
+
+    wp_enqueue_style('bootstrap-responsive');
+    wp_enqueue_style('bootstrap-css');
+}
+add_action('wp_enqueue_scripts', 'theme_styles');
