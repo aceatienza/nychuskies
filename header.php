@@ -39,13 +39,11 @@
 
 <body <?php body_class(); ?> >
 
-
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 <!-- removed hgroup -->
 
-<!-- navbar -->
-  <div class="navbar">
+  <div class="navbar"><!-- navbar -->
     <div class="navbar-inner">
       <!-- TODO: change brand to logo -->
       <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
@@ -70,7 +68,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!-- /navbar -->
 
 
 
@@ -83,58 +81,55 @@
 	</header><!-- #masthead -->
 
 <!-- recent posts carousel -->
- <div id="myCarousel" class="carousel slide">
- <div class="carousel-inner">
+  <?php if ( is_front_page() ) : ?>
+  <div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
 
-  <?php 
-   $the_query = new WP_Query(array(
-    'category_name' => 'Featured', 
-    'posts_per_page' => 1 
-    )); 
-   while ( $the_query->have_posts() ) : 
-   $the_query->the_post();
-  ?>
-  
-   <div class="item active" style="height: 350px;">
-    <?php the_post_thumbnail('full');?>
-    <div class="carousel-caption">
-     <h4><?php the_title();?></h4>
-     <p><?php the_excerpt();?></p>
-    </div>
-   </div><!-- item active -->
-   
-  <?php 
-   endwhile; 
-   wp_reset_postdata();
-  ?>
+      <?php $the_query = new WP_Query(array(
+        'category_name' => 'Featured',
+        'posts_per_page' => 1 ));
+        while ( $the_query->have_posts() ) : $the_query->the_post();
+      ?>
 
-  <?php 
-   $the_query = new WP_Query(array(
-    'category_name' => 'Featured', 
-    'posts_per_page' => 3, 
-    'offset' => 1 
-    )); 
-   while ( $the_query->have_posts() ) : 
-   $the_query->the_post();
-  ?>
-  
-   <div class="item" style="height: 350px;">
-    <?php the_post_thumbnail('full');?>
-    <div class="carousel-caption">
-     <h4><?php the_title();?></h4>
-     <p><?php the_excerpt();?></p>
-    </div>
-   </div><!-- item -->
+      <div class="item active" style="height: 350px;">
+        <?php the_post_thumbnail('full');?>
+        <div class="carousel-caption">
+          <h4><?php the_title();?></h4>
+          <p><?php the_excerpt();?></p>
+        </div>
+      </div><!-- item active -->
 
-  <?php 
-   endwhile; 
-   wp_reset_postdata();
-  ?>
+      <?php endwhile; 
+        wp_reset_postdata();
+      ?>
 
- </div><!-- carousel-inner -->
- <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
- <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-</div><!-- #myCarousel --> 
-<!-- end carousel -->
+      <?php 
+      $the_query = new WP_Query(array(
+      'category_name' => 'Featured', 
+      'posts_per_page' => 3, 
+      'offset' => 1 
+      )); 
+      while ( $the_query->have_posts() ) : 
+      $the_query->the_post();
+      ?>
+
+      <div class="item" style="height: 350px;">
+        <?php the_post_thumbnail('full');?>
+        <div class="carousel-caption">
+          <h4><?php the_title();?></h4>
+          <p><?php the_excerpt();?></p>
+        </div>
+      </div><!-- item -->
+
+      <?php 
+      endwhile; 
+      wp_reset_postdata();
+      ?>
+
+    </div><!-- carousel-inner -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+  </div><!-- end carousel -->
+  <?php endif; ?>
 
 	<div id="main" class="wrapper">
