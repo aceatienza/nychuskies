@@ -1049,6 +1049,21 @@ body {
 	padding-left: 0px !important;
     padding-right: 0px !important;
 }
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+.navbar .brand {
+    padding: 0px !important;
+}	
+.navbar .brand img {
+	height: 60px;
+}
+.navbar .nav > li > a {
+    font-size: 20px !important;
+}
+
+
 
 /* active navbar highlight
  * TODO: update for collapsed // adding active WORKS

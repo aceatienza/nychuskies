@@ -43,10 +43,15 @@
 	<header id="masthead" class="site-header" role="banner">
 <!-- removed hgroup -->
 
+
+
+
   <div class="navbar"><!-- navbar -->
     <div class="navbar-inner">
       <!-- TODO: change brand to logo -->
-      <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+      <a class="brand" href="<?php echo site_url(); ?>" alt="<?php bloginfo('name'); ?>" >
+        <img src="<?php echo get_template_directory_uri() . '/images/default-logo.jpg' ?>">
+      </a>
       <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
