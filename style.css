@@ -1044,6 +1044,12 @@ background-image: url("images/default-logo.jpg");
 	margin-bottom: 0px !important;  /* override bootstrap margin under carousel */
 }
 
+/* bootstrap overrides */
+body {
+	padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
 /* active navbar highlight
  * TODO: update for collapsed // adding active WORKS
  */
