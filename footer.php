@@ -12,7 +12,7 @@
 	?>
 		</div><!-- #main .wrapper -->
 
-		<div class="pull-right">Site design & development by <a href="<?php echo esc_url('www.linkedin.com/in/aceatienza/'); ?>">Ace Atienza</a>. Class of 2002</div>
+		<div class="pull-right">Design by <a href="<?php echo esc_url('www.linkedin.com/in/aceatienza/'); ?>">Ace Atienza</a> '02</div>
 
 
 	</div><!-- #page -->
