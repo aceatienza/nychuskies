@@ -13,7 +13,7 @@
 
 		</div><!-- #main .wrapper -->
 
-		<div class="container" style="margin: 0 auto; width: 50%;">
+		<div class="container centered">
 			<div class="row">
 				<div class="span2"><?php dynamic_sidebar( 'sidebar-2' ); ?></div>  <!-- Left column: Categories -->
 				<div class="span2"><?php dynamic_sidebar( 'sidebar-3' ); ?></div>  <!-- Middle column: Archives -->

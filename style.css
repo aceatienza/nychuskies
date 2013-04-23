@@ -987,105 +987,6 @@ footer.entry-meta {
 }
 
 
-/* Custom for NYC Huskies */
-
-/* dark purple */
-.article-color-template1, .article-color-template1 a {
-  background-color: #181028;
-  color: #EDE8DA;
-}
-
-/* purple */
-.article-color-template2, .article-color-template2 a {
-  background-color: #54398A;
-  color: #ffffff;
-}
-
-/* light beige */
-.article-color-template3, .article-color-template3 a {
-  background-color: #EDE8DA;
-  color: #54398A;
-}
-
-/* NY HUSKIES Logo */
-.gold-logo {
-	font-size: 20px;
-	color: #d7a900;
-}
-.purple-logo {
-	font-size: 20px;
-	color: #39275b;
-}
-
-/* NY Huskies logo 
-#menu-item-209 a {
-background-image: url("images/default-logo.jpg");
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: 250px 63px;
-    display: inline-block;
-    vertical-align: middle;
-    height: 63px;
-    margin-top: 3px;
-    outline: medium none;
-    text-indent: -9999px;
-    width: 250px;
-} */
-
-/* padding around all nav links except logo */
-.menu-item-object-category {
-	display: inline-block;
-	padding: 0px 20px;
-	vertical-align: middle;
-}
-
-/* carousel */
-.carousel {
-	margin-bottom: 0px;  /* override bootstrap margin under carousel */
-}
-
-/* bootstrap overrides */
-body {
-	padding-left: 0px;
-    padding-right: 0px;
-}
-.navbar {
-    margin-bottom: 0px;
-}
-
-.navbar .brand {
-    padding: 0px;
-}	
-.navbar .brand img {
-	height: 60px;
-}
-.navbar .nav > li > a {
-    font-size: 20px;
-}
-
-
-
-/* active navbar highlight
- * TODO: update for collapsed // adding active WORKS
- */
-
-
-
-.collapse .nav .active > a,
-.collapse .nav .active > a:hover,
-.collapse .nav .active > a:focus,
-.collapse .nav .current_page_item > a,
-.collapse .nav .current_page_item > a:hover,
-.collapse .nav .current_page_item > a:focus,
-.collapse .nav .current_page_parent > a,
-.collapse .nav .current_page_parent > a:hover,
-.collapse .nav .current_page_parent > a:focus,
-{
-	color: #54398A;
-}
-
-
-
 /* =Archives
 -------------------------------------------------------------- */
 
@@ -1822,3 +1723,104 @@ img#wpstats {
 	}
 }
 
+/* Custom for NYC Huskies */
+
+/* dark purple */
+.article-color-template1, .article-color-template1 a {
+  background-color: #181028;
+  color: #EDE8DA;
+}
+
+/* purple */
+.article-color-template2, .article-color-template2 a {
+  background-color: #54398A;
+  color: #ffffff;
+}
+
+/* light beige */
+.article-color-template3, .article-color-template3 a {
+  background-color: #EDE8DA;
+  color: #54398A;
+}
+
+/* NY HUSKIES Logo */
+.gold-logo {
+	font-size: 20px;
+	color: #d7a900;
+}
+.purple-logo {
+	font-size: 20px;
+	color: #39275b;
+}
+
+/* NY Huskies logo 
+#menu-item-209 a {
+background-image: url("images/default-logo.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 250px 63px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 63px;
+    margin-top: 3px;
+    outline: medium none;
+    text-indent: -9999px;
+    width: 250px;
+} */
+
+/* padding around all nav links except logo */
+.menu-item-object-category {
+	display: inline-block;
+	padding: 0px 20px;
+	vertical-align: middle;
+}
+
+/* carousel */
+.carousel {
+	margin-bottom: 0px;  /* override bootstrap margin under carousel */
+}
+
+/* bootstrap overrides */
+body {
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar .brand {
+    padding: 0px;
+}	
+.navbar .brand img {
+	height: 60px;
+}
+.navbar .nav > li > a {
+    font-size: 20px;
+}
+
+
+
+/* active navbar highlight
+ * TODO: update for collapsed // adding active WORKS
+ */
+
+
+
+.collapse .nav .active > a,
+.collapse .nav .active > a:hover,
+.collapse .nav .active > a:focus,
+.collapse .nav .current_page_item > a,
+.collapse .nav .current_page_item > a:hover,
+.collapse .nav .current_page_item > a:focus,
+.collapse .nav .current_page_parent > a,
+.collapse .nav .current_page_parent > a:hover,
+.collapse .nav .current_page_parent > a:focus,
+{
+	color: #54398A;
+}
+
+.centered {
+	margin: 0 auto;
+	width: 50%;
+}
