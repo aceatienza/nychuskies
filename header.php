@@ -43,9 +43,6 @@
 	<header id="masthead" class="site-header" role="banner">
 <!-- removed hgroup -->
 
-
-
-
   <div class="navbar"><!-- navbar -->
     <div class="navbar-inner">
       <!-- TODO: change brand to logo -->

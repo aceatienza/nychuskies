@@ -32,4 +32,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar( 'front' ); ?>
+
+</div><!-- #main .wrapper -->
+
 <?php get_footer(); ?>

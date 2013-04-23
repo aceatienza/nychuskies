@@ -431,12 +431,12 @@ img.wp-smiley,
 }
 .nav-previous,
 .previous-image {
-	float: left;
+	/* float: left; */
 	width: 50%;
 }
 .nav-next,
 .next-image {
-	float: right;
+	/* float: right; */
 	text-align: right;
 	width: 50%;
 }
@@ -1823,4 +1823,11 @@ body {
 .centered {
 	margin: 0 auto;
 	width: 50%;
+}
+
+.footer-nav {
+	background-color: black;
+	padding-bottom: 20px; 
+	padding-top: 20px;
+	margin-bottom: 20px;
 }

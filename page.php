@@ -26,5 +26,5 @@ The template for displaying all pages.
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
+</div><!-- #main .wrapper -->
 <?php get_footer(); ?>

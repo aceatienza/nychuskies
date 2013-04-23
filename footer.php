@@ -11,7 +11,7 @@
 	 */
 	?>
 
-		</div><!-- #main .wrapper -->
+		
 
 		<div class="container centered">
 			<div class="row">

@@ -64,3 +64,4 @@ This is content.php
 			<?php endif; ?>
 		</footer><!-- .entry-meta -->
 	</article><!-- #post -->
+

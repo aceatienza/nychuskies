@@ -69,5 +69,5 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</section><!-- #primary -->
-
+</div><!-- #main .wrapper -->
 <?php get_footer(); ?>

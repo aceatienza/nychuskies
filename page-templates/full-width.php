@@ -26,5 +26,5 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
+</div><!-- #main .wrapper -->
 <?php get_footer(); ?>
