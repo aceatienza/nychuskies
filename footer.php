@@ -11,6 +11,8 @@
 	 */
 	?>
 
+		</div><!-- #main .wrapper -->
+
 		<div class="container" style="margin: 0 auto; width: 50%;">
 			<div class="row">
 				<div class="span2"><?php dynamic_sidebar( 'sidebar-2' ); ?></div>  <!-- Left column: Categories -->
@@ -19,11 +21,7 @@
 			</div>
 		</div>
 
-		</div><!-- #main .wrapper -->
-
-
-
-	<div class="pull-right">Design by <a href="<?php echo esc_url('www.linkedin.com/in/aceatienza/'); ?>">Ace Atienza</a> '02</div>
+		<div class="pull-right">Design by <a href="<?php echo esc_url('www.linkedin.com/in/aceatienza/'); ?>">Ace Atienza</a> '02</div>
 	</div><!-- #page -->
 	
 	<?php wp_footer(); ?>
