@@ -25,12 +25,14 @@ This is single.php
 
 	</div><!-- #main .wrapper -->
 
-	<div class="footer-nav"><!-- footer-nav -->
-		<nav class="nav-single">
-			<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
-			<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></span>
-			<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></span>
-		</nav><!-- .nav-single -->
-	</div><!-- /footer-hav -->
+<!-- TODO: split spans into divs; 50% inline-block; text align right -->
+
+	
+	<nav class="footer-nav" role="navigation">
+		<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
+		<div class="nav-previous alignleft"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></div>
+		<div class="nav-next alignright"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></div>
+	</nav>
+	
 
 <?php get_footer(); ?>
