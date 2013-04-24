@@ -1826,6 +1826,11 @@ body {
 }
 
 .footer-nav {
+	display:table;
+    vertical-align:middle;
+    height: 100%;
+    width: 100%;
+
 	background-color: black;
 	padding-bottom: 20px; 
 	padding-top: 20px;
