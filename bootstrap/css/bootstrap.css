@@ -5142,12 +5142,12 @@ a.thumbnail:focus {
 }
 .carousel-caption {
   position: absolute;
-  left: 0;
-  right: 0;
+  /*left: 0;*/
+  /*right: 0;*/
   bottom: 0;
   padding: 15px;
   background: #333333;
-  background: rgba(0, 0, 0, 0.75);
+  /*background: rgba(0, 0, 0, 0.75);*/
 }
 .carousel-caption h4,
 .carousel-caption p {
@@ -5155,7 +5155,7 @@ a.thumbnail:focus {
   line-height: 20px;
 }
 .carousel-caption h4 {
-  margin: 0 0 5px;
+  /*margin: 0 0 5px;*/
 }
 .carousel-caption p {
   margin-bottom: 0;
