@@ -208,7 +208,6 @@ button,
 input,
 textarea {
 	border: 1px solid #ccc;
-	border-radius: 3px;
 	font-family: inherit;
 	padding: 6px;
 	padding: 0.428571429rem;
@@ -257,7 +256,6 @@ li.bypostauthor cite span {
 	background-image: -o-linear-gradient(top, #f4f4f4, #e6e6e6);
 	background-image: linear-gradient(top, #f4f4f4, #e6e6e6);
 	border: 1px solid #d2d2d2;
-	border-radius: 3px;
 	box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
 }
 .menu-toggle,
@@ -308,7 +306,6 @@ li.bypostauthor cite span {
 	background-color: #21759b;
 	background-image: none;
 	border: 1px solid #1f6f93;
-	border-radius: 2px;
 	box-shadow: none;
 	padding: 0;
 }
@@ -362,7 +359,6 @@ img.header-image,
 .author-avatar img,
 img.wp-post-image {
 	/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
-	border-radius: 3px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .wp-caption {
@@ -381,7 +377,6 @@ img.wp-post-image {
 img.wp-smiley,
 .rsswidget img {
 	border: 0;
-	border-radius: 0;
 	box-shadow: none;
 	margin-bottom: 0;
 	margin-top: 0;
@@ -511,7 +506,6 @@ a:hover {
 .main-navigation .assistive-text:focus {
 	background: #fff;
 	border: 2px solid #333;
-	border-radius: 3px;
 	clip: auto !important;
 	color: #000;
 	display: block;
@@ -1096,7 +1090,6 @@ article.format-link header {
 	text-transform: uppercase;
 	color: #848484;
 	background-color: #ebebeb;
-	border-radius: 3px;
 }
 article.format-link .entry-content {
 	max-width: 80%;
@@ -1237,7 +1230,6 @@ article.format-quote .entry-content blockquote {
 	background-image: -webkit-linear-gradient(top, #009cee, #0088d0);
 	background-image: -o-linear-gradient(top, #009cee, #0088d0);
 	background-image: linear-gradient(top, #009cee, #0088d0);
-	border-radius: 3px;
 	border: 1px solid #007cbd;
 }
 .comments-area li.bypostauthor cite span {
@@ -1794,6 +1786,10 @@ background-image: url("images/default-logo.jpg");
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
 	right: 20px;
 }
+.carousel-caption a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
 .carousel-caption h4{
 	margin:0 0 0px;
 }
@@ -1857,22 +1853,15 @@ body {
 }
 
 #thin-strip {
-  height: 30px;
+  height: 29px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #54398A;
+  /*background-color: #54398A;*/
+  background-color: black;
+  padding-right: 20px;
   z-index: -1;
-  box-shadow: 0 0px 6px #333;
-  -moz-box-shadow: 0 0px 6px #333;
-  -webkit-box-shadow: 0 0px 6px #333;
-  overflow: hidden;
-
-  background: linear-gradient(to bottom, #54398a 0%,#000000 100%); /* W3C */
-  background: -webkit-linear-gradient(top, #54398a 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
-  background: -ms-linear-gradient(top, #54398a 0%,#000000 100%); /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54398a', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 img.w {
   position:absolute;
@@ -1884,5 +1873,5 @@ img.w {
 }
 
 body {
-	margin-top: 30px;
+	margin-top: 29px;
 }

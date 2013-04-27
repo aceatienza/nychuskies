@@ -41,7 +41,16 @@
 
 <div id="page" class="hfeed site">
 	
-<div id="thin-strip"></div>
+
+<div id="thin-strip"><!-- social media -->
+  <a class="pull-right" href="https://www.facebook.com/groups/4934669684" alt="<?php bloginfo('name'); ?>" >
+    <img src="<?php echo get_template_directory_uri() . '/images/32x32-Square-49-FB.png' ?>">
+  </a>
+  <a class="pull-right" href="http://www.linkedin.com/groups?gid=3241803" alt="<?php bloginfo('name'); ?>" >
+    <img src="<?php echo get_template_directory_uri() . '/images/32x32-Square-49-LI.png' ?>">
+  </a>
+
+</div><!-- end social media -->
 
 
 <!-- recent posts carousel -->
@@ -76,7 +85,7 @@
       $the_query->the_post();
       ?>
 
-      <div class="item" style="height: 350px;">
+      <div class="item">
         <?php the_post_thumbnail('full');?>
         <div class="carousel-caption">
           <h4><a href="<?php echo get_permalink(); ?>"> <?php the_title();?> </a></h4>
