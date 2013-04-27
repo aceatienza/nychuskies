@@ -58,8 +58,7 @@
       <div class="item active">
         <?php the_post_thumbnail('full');?>
         <div class="carousel-caption">
-          <h4><?php the_title();?></h4>
-          
+          <h4><a href="<?php echo get_permalink(); ?>"> <?php the_title();?> </a></h4>        
         </div>
       </div><!-- item active -->
 
@@ -80,8 +79,7 @@
       <div class="item" style="height: 350px;">
         <?php the_post_thumbnail('full');?>
         <div class="carousel-caption">
-          <h4><?php the_title();?></h4>
-          <!-- <p><?php the_excerpt();?></p> -->
+          <h4><a href="<?php echo get_permalink(); ?>"> <?php the_title();?> </a></h4>
         </div>
       </div><!-- item -->
 
