@@ -8,7 +8,7 @@
  */
 ?>
 
-This is content.php
+[TO REMOVE]content.php
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 

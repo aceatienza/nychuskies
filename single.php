@@ -11,7 +11,7 @@ get_header(); ?>
 
 [TO REMOVE]single.php
 
-		<div id="primary" class="site-content article-color-template3">
+		<div id="primary" class="site-content article-color-template1">
 			<div id="content" role="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>

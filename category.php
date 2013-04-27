@@ -47,4 +47,7 @@ get_header(); ?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 </div><!-- #main .wrapper -->
+
+<div class="footer-nav"></div>
+
 <?php get_footer(); ?>
