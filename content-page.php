@@ -7,7 +7,7 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-
+content-page.php
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<div class="entry-content">

@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-This is single.php
+[TO REMOVE]single.php
 
 		<div id="primary" class="site-content article-color-template3">
 			<div id="content" role="main">
