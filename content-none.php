@@ -18,5 +18,3 @@
 			<?php get_search_form(); ?>
 		</div><!-- .entry-content -->
 	</article><!-- #post-0 -->
-
-	<div class="footer-nav"></div>

@@ -27,4 +27,5 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 </div><!-- #main .wrapper -->
+<div class="footer-nav"></div><!-- black bar -->
 <?php get_footer(); ?>

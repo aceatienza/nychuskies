@@ -15,8 +15,4 @@
 			<?php the_content(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
-
-
 	</article><!-- #post -->
-
-	<div class="footer-nav"></div>
