@@ -14,8 +14,6 @@
 
 get_header(); ?>
 
-[TO REMOVE] page.php
-
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 

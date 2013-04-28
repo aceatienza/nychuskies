@@ -11,8 +11,6 @@
 	 */
 	?>
 
-		
-
 		<div class="container centered">
 			<div class="row">
 				<div class="span2"><?php dynamic_sidebar( 'sidebar-2' ); ?></div>  <!-- Left column: Categories -->
