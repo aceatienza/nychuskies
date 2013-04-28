@@ -451,3 +451,12 @@ function twentytwelve_customize_preview_js() {
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
 
+/* NYC Huskies post types for front page. added All-in-one calendar event's
+*  custom post type 'ai1ec_event' to posts and feed 
+*/
+add_filter( 'pre_get_posts', 'nyhuskies_home_get_posts' );
+function nyhuskies_home_get_posts( $query ) {
+	if ( ( is_home() && $query->is_main_query() ) || is_feed() )
+		$query->set( 'post_type', array( 'post', 'gallery', 'ai1ec_event' ) );
+	return $query;
+}
