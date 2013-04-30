@@ -1806,11 +1806,8 @@ body {
 }
 
 #thin-strip {
-  height: 29px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 30px;
+  position: fixed;
   /*background-color: #54398A;*/
   background-color: black;
   padding-right: 20px;
@@ -1860,5 +1857,10 @@ body {
 	cursor: text;
 	outline: 0;
 	width: 230px;
+}
+
+.fixed {
+	position: fixed;
+	top: 30px;
 }
 
