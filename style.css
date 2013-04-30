@@ -1756,7 +1756,7 @@ body {
 }
 
 .navbar-inner {
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 1px 0 #000000;
 	border: 0px;
 	border-radius: 0px;
 }
@@ -1777,6 +1777,15 @@ body {
 .collapse .nav .current_page_parent > a:focus,
 {
 	color: #54398A;
+}
+
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus {
+	color: #39275B;
+	background-color: 0;
+	box-shadow: 0;
+
 }
 
 .centered {
