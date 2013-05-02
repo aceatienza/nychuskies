@@ -1721,6 +1721,7 @@ background-image: url("images/default-logo.jpg");
 /* carousel */
 .carousel {
 	margin-bottom: 0px;  /* override bootstrap margin under carousel */
+	z-index: 1;
 }
 .carousel-caption {
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
@@ -1739,7 +1740,7 @@ background-image: url("images/default-logo.jpg");
 body {
 	padding-left: 0px;
     padding-right: 0px;
-
+    margin-top: 30px; /*account for fixed thin-strip*/
 }
 .navbar {
     margin-bottom: 0px;
@@ -1808,10 +1809,13 @@ body {
 #thin-strip {
   height: 30px;
   position: fixed;
-  /*background-color: #54398A;*/
+  overflow: hidden;
   background-color: black;
   padding-right: 20px;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 img.w {
   position:absolute;
@@ -1822,9 +1826,6 @@ img.w {
   background-repeat: no-repeat;
 }
 
-body {
-	margin-top: 29px;
-}
 
 /* Search form in navbar */
 .navbar .searchform {
@@ -1862,5 +1863,8 @@ body {
 .fixed {
 	position: fixed;
 	top: 30px;
+	left: 0;
+	right: 0;
+	z-index: 5;
 }
 
