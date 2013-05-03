@@ -30,7 +30,7 @@ function theme_js()
 	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '2.3.1' );
 	wp_enqueue_script( 'bootstrap-js' );
 
-	wp_register_script('fixednav', get_template_directory_uri() . '/js/fixednav.js', '', '.5', true );
+	wp_register_script('fixednav', get_template_directory_uri() . '/js/fixednav.js', array( 'jquery' ), '.5', true);
 	wp_enqueue_script( 'fixednav');
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );

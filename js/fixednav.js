@@ -1,10 +1,17 @@
-/* Fix nav bar to the top of all pages
-*/
-var fixednav = document.querySelector('.navbar');
-var carouselHeight = (document.getElementById("myCarousel").offsetHeight) + 10; // should be (document.getElementById("thin-strip").offsetHeight) // but doesn't work properly
+jQuery(document).ready(function($) {
+	var cHeight = $("#myCarousel").height();
+	var tHeight = $("#thin-strip").height();
+	var stickyHeight = cHeight + tHeight;
 
-function onScroll(e) {
-  window.scrollY >= carouselHeight ? fixednav.classList.add('fixed') : fixednav.classList.remove('fixed');
-}
-
-document.addEventListener('scroll', onScroll);
+	$(window).scroll( function() {
+		var windowScroll = $(window).scrollTop();
+		
+		if (windowScroll >= stickyHeight){
+		$(".navbar").addClass("fixed");
+		}
+		if (windowScroll <= stickyHeight){
+			$(".navbar").removeClass("fixed");
+		}
+		// change to toggleClass
+	});
+});
