@@ -1,7 +1,5 @@
 jQuery(document).ready(function($) {
-	var cHeight = $("#myCarousel").height();
-	var tHeight = $("#thin-strip").height();
-	var stickyHeight = cHeight + tHeight;
+	var stickyHeight = $("#myCarousel").outerHeight() + $("#thin-strip").outerHeight();
 
 	$(window).scroll( function() {
 		var windowScroll = $(window).scrollTop();
