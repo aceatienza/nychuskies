@@ -126,6 +126,7 @@
                   'walker' => new twitter_bootstrap_nav_walker()) // in case we add drop down menus
               );
           ?>
+          <?php get_search_form(); ?>
         </div>
       </div>
     </div>
