@@ -1753,7 +1753,7 @@ body {
 	height: 60px;
 }
 .navbar .nav > li > a {
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px 10px;
 }
 
@@ -1844,8 +1844,8 @@ img.w {
 	border: medium none;
 	cursor: pointer;
 	height: 37px;
-	/*-webkit-transition: width 400ms ease, background 400ms ease;
-	transition:         width 400ms ease, background 400ms ease;*/
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition:         width 400ms ease, background 400ms ease;
 	margin: 3px 0;
 	padding: 0 0 0 34px;
 	position: absolute;
